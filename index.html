@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dangal Fitness</title>
+
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    /* css reset - iska matlba hai website ke margin aur padding ko reset karna  */
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/fitness-g1bc78bca5_1920.jpg');
+    }
+
+    .left {
+        position: absolute;
+        left: 16px;
+        top: -2px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 13.5px;
+        line-height: 0px;
+    }
+
+    .left img {
+        width: 85px;
+        height: 72px;
+        /* now you can observe that our logo is black and it is not visible so to correct this we will use invert function  */
+        filter: invert(100%);
+        align-items: center;
+    }
+
+    .mid {
+        /* agar aapko margin auto ki help se element ko beech me laana hai to display block honi chahiye aur width set karni padegi aur margin auto to karni hii padegi  */
+        display: block;
+        width: 43%;
+        margin: 13px auto;
+        background-color: black;
+        border: 2px solid grey;
+        border-radius: 68px;
+        height: 56px;
+        /* border: 2px solid green; */
+
+    }
+
+    .right {
+        position: absolute;
+        /* abb yeh top aur right wali jo ham position de rahe hein naa to yeh header ke respect me matlab parent ke respect me change hoga  */
+        right: 14px;
+        top: 22px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 4px 20px;
+        font-size: 15px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        margin: 2px 13px;
+        color: white;
+        background-color: black;
+        padding: 3px 4px;
+        border: 2px solid grey;
+        border-radius: 27px;
+        font-size: 14px;
+        font-family: 'Baloo Bhai 2', cursive;
+        width: 97px;
+        height: 34px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(39, 36, 36);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 82px 67px;
+        padding: 34px 33px;
+        width: 31%;
+        border-radius: 25px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+        text-align: center;
+        display: block;
+        width: 285px;
+        padding: 8px;
+        border: 2px solid black;
+        /* abb hamne margin 3 px aur auto isiliye kia kyunki display block kari hai aur width bhii set kari hai so now we are eligible to centre it using margin auto  */
+        margin: 3px auto;
+        border-radius: 10px;
+        font-family: 'Baloo Bhai 2', cursive;
+
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 93px;
+        margin: 22px auto;
+        font-size: 15px;
+    }
+
+    /* ul{
+        background-color: black;
+    border-radius: 46px;
+    } */
+</style>
+
+<body>
+    <header class="header">
+        <!-- for applying logo -->
+        <div class="left">
+            <img src="img/—Pngtree—gym logo_5149987.png" alt="">
+            <div>Dangal Fitness</div>
+        </div>
+        <!-- for navigation menu  -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- for buttons in right  -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Best Gym of Gwalior</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your locality">
+            </div>
+            <button class="btn">Submit Now</button>
+        </form>
+    </div>
+</body>
+
+</html>
